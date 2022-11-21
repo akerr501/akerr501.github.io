@@ -1,0 +1,202 @@
+{
+  "education": [
+    {
+      "school": "Oregon State University",
+      "degree": "Bachelor's degree of Science in Computer Science",
+      "graduation": "Summer 2022",
+      "gpa": "3.95",
+      "miscDegreeDescrip": "Summa Cum Lada",
+      "accomplishments": [
+        "4.0 Senior GPA",
+        "Evergreen State Scholarship",
+        "Graduated in three years"
+      ],
+      "accomplishmentBolds": ["4.0", "three years", "evergreen state"]
+    }
+  ],
+  "workExperience": [
+    {
+      "employer": "BonoBooks",
+      "position": "Co-founder and Developer",
+      "location": "Seattle, WA",
+      "start": "March 2020",
+      "end": "Present",
+      "description": "Co-developer of the only peer-to-peer textbook renting app on the market, developed with Flutter. Accomplishments include:",
+      "accomplishments": [
+        "Implemented touchless and secure payments with our payment processor Stripe.",
+        "Designed in-app messaging, login, signup, transactions, and managing rentals.",
+        "Created ticketing system for in-app reports for customer service."
+      ],
+      "descriptionBolds" : ["Co-developer", "Flutter"],
+      "accomplishmentBolds" : ["touchless", "secure payments", "in-app messaging,", "ticketing system", "transactions,"]
+    },
+    {
+      "employer": "College of Engineering, Oregon State University",
+      "position": "Undergraduate Learning Assistant",
+      "location": "Corvallis, OR",
+      "start": "March 2022",
+      "end": "June 2022",
+      "description": "Assisted learning for introductory programming courses focused on IoT projects utilizing Arduinos and C++.  Responsibilities include:",
+      "accomplishments": [
+        "Instructing lab sections focused on programming, soldering, utilizing sensors, and Internet connectivity.",
+        "Grading assignments and labs."
+      ],
+      "descriptionBolds" : ["iot", "arduinos", "c++"],
+      "accomplishmentBolds" : ["instructing", "programming,", "grading"]
+    },
+    {
+      "employer": "OPEN Sensing Lab, Oregon State University",
+      "position": "Student Project Lead",
+      "location": "Corvallis, OR",
+      "start": "February 2020",
+      "end": "September 2021",
+      "description": "Software development lead for environmental sensing projects on embedded systems. Accomplishments include:",
+      "accomplishments": [
+        "Developed an LTE networking communication channel to access the Internet for publishing data.",
+        "Designed the project’s continuous integration system that includes automatically generated documentation and automatic testing.",
+        "Optimized installation process to be quicker and simpler",
+        "Presented project at Summer Undergraduate Research Symposium at Oregon State University."
+      ],
+      "descriptionBolds" : ["development lead", "sensing projects"],
+      "accomplishmentBolds" : ["lte", "continuous integration", "research symposium"]
+    }
+  ],
+  "volunteerExperience": [
+    {
+      "organization": "Benton County Health Department",
+      "project": "COVID-19 Vaccine Distribution",
+      "location": "Corvallis, OR",
+      "hours": "40+",
+      "description": "Helped facilitate mass distribution of vaccines to the community of Corvallis at Reser Stadium. Tasks included:",
+      "accomplishments": [
+        "Cleaning surfaces throughout the facility.",
+        "Organize and monitor lines for recipients of the vaccine.",
+        "Observing and communicating with recipients to ensure their wellbeing"
+      ],
+      "descriptionBolds" : ["mass distribution", "vaccines"],
+      "accomplishmentBolds" : ["monitor", "cleaning", "communicating"]
+    }
+  ],
+  "languages": [
+    {
+      "value": "Dart",
+      "experience": "high",
+      "color": 1
+    },
+    {
+      "value": "Python",
+      "experience": "high",
+      "color": 5
+    },
+    {
+      "value": "C++",
+      "experience": "high",
+      "color": 8
+    },
+    {
+      "value": "JavaScript",
+      "experience": "high",
+      "color": 14
+    },
+    {
+      "value": "Java",
+      "experience": "medium",
+      "color": 15
+    },
+    {
+      "value": "C",
+      "experience": "medium",
+      "color": 8
+    },
+    {
+      "value": "Kotlin",
+      "experience": "medium",
+      "color": 22
+    },
+    {
+      "value": "SQL",
+      "experience": "medium",
+      "color": 19
+    },
+    {
+      "value": "AVR Assembly",
+      "experience": "low",
+      "color": 16
+    },
+    {
+      "value": "Rust",
+      "experience": "low",
+      "color": 17
+    },
+
+    {
+      "value": "SystemVerilog",
+      "experience": "low",
+      "color": 18
+    },
+    {
+      "value": "Flex",
+      "experience": "low",
+      "color": 26
+    },
+    {
+      "value": "Ruby",
+      "experience": "low",
+      "color": 19
+    },
+    {
+      "value": "Raku",
+      "experience": "low",
+      "color": 20
+    },
+    {
+      "value": "Prolog",
+      "experience": "low",
+      "color": 21
+    }
+  ],
+  "skills": [
+    {
+      "value": "Flutter",
+      "color": 1
+    },
+    {
+      "value": "Android",
+      "color": 23
+    },
+    {
+      "value": "iOS",
+      "color": 24
+    },
+    {
+      "value": "Firebase",
+      "color": 25
+    },
+    {
+      "value": "React.js",
+      "color": 10
+    },
+    {
+      "value": "Node.js",
+      "color": 27
+    },
+    {
+      "value": "Handlebars",
+      "color": 28
+    },
+    {
+      "value": "Arduino",
+      "color": 7
+    },
+    {
+      "value": "TravisCI",
+      "color": 29
+    },
+    {
+      "value": "GitHub Actions",
+      "color": 30
+    }
+
+
+  ]
+}

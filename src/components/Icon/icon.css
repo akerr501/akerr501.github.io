@@ -1,0 +1,25 @@
+.icon-text {
+  cursor: pointer;
+  background-color: #eeeeee;
+  border: 0.25px solid rgba(0, 0, 0, 0.1);
+  border-radius: 0.375rem;
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 125px;
+  white-space: pre-wrap;
+  /* font-size: 0.95em; */
+}
+
+.icon-column {
+  width: 25%;
+  min-width: 100px;
+  /* max-width: 150px; */
+}
+
+.no-select, h3 {
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+/Edge */
+  user-select: none; /* Standard */
+}

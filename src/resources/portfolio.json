@@ -1,0 +1,94 @@
+[
+  {
+    "id" : 0,
+    "title" : "BonoBooks",
+    "image" : "bblogo",
+    "description" : "The first peer-to-peer textbook renting app for students at University of Washington. ",
+    "contributions" : [
+      "Co-founder and co-developer",
+      "Messaging, signup, and managing rentals",
+      "Secure payments via Stripe"
+    ],
+    "links" : ["https://www.bonobooks.app/", "https://apps.apple.com/us/app/bonobooks/id1586423229?platform=iphone", "https://play.google.com/store/apps/details?id=com.bonobooks.ugs"],
+    "linkText": ["Company Site", "App Store", "Play Store"],
+    "linkIcons" : [1, 2, 3],
+    "chips" : ["Mobile", "Flutter", "NoSQL"],
+    "chipColors": [0,1,2],
+    "descriptionBolds" : ["first", "app"],
+    "contributionBolds" : ["messaging,", "co-founder", "secure"]
+  },
+  {
+    "id" : 1,
+    "title" : "Capstone Project",
+    "image" : "capstone",
+    "description" : "An application to calibrate and model a 3D environment with a robotic arm using cameras.",
+    "contributions" : ["Made camera calibration code with OpenCV", "Helped with the GUI design of applications"],
+    "links" : ["https://github.com/Keeganfn/testbed-calibration", "https://media.oregonstate.edu/media/t/1_j9c3s63h", "https://events.engineering.oregonstate.edu/expo2022/project/3d-calibration-and-visualization-robotic-workspaces"],
+    "linkText": ["GitHub", "Demo Video", "Project Site"],
+    "linkIcons" : [0, 5, 4],
+    "chips" : ["Robotics", "CV", "Python"],
+    "chipColors": [3,4,5],
+    "descriptionBolds" : ["calibrate", "robotic arm", "model"],
+    "contributionBolds" : ["opencv", "gui", "calibration"]
+  },
+  {
+    "id" : 2,
+    "title" : "Personal Site",
+    "image" : "personal",
+    "description" : "My personal site to show others my skills and experiences. Built in React.js and hosted via GitHub.",
+    "contributions" : [
+      "All pages were designed and made by myself",
+      "Animations via Framer Motion"
+    ],
+    "links" : ["https://github.com/akerr501/akerr501.github.io"],
+    "linkText": ["GitHub"],
+    "linkIcons" : [0],
+    "chips" : ["Web", "React.js", "HTML"],
+    "chipColors": [9,10,11],
+    "descriptionBolds" : ["react.js", "personal"],
+    "contributionBolds" : ["animations", "designed", "myself"]
+  },
+  {
+    "id" : 3,
+    "title" : "Loom",
+    "image" : "opens",
+    "description" : "Open-sourced Arduino library with a modular design to reduce the coding literacy for sensing projects.",
+    "contributions" : ["Developed LTE connectivity", "Designed continuous integration for testing", "Optimized installation"],
+    "links" : ["https://github.com/OPEnSLab-OSU/Loom", "https://open-sensing.org/"],
+    "linkText": ["GitHub", "Lab Site"],
+    "linkIcons" : [0, 4],
+    "chips" : ["IoT", "Arduino", "C++"],
+    "chipColors": [6,7,8],
+    "descriptionBolds" : ["modular", "coding literacy"],
+    "contributionBolds" : ["lte", "continuous integration", "optimized"]
+  },
+
+  {
+    "id" : 4,
+    "title" : "JOS",
+    "image" : "jos",
+    "description" : "Creating an exokernel style operating system for my OS curriculum with Unix-like functions.",
+    "contributions" : ["Unix-like functions built within the user-level library", "Implemented booting, memory management, user environments, and multitasking"],
+    "links" : ["https://github.com/akerr501/jos/tree/lab4", "https://sibin.github.io/teaching/cs444-osu-operating-systems/spring_2022/index.html"],
+    "linkText": ["GitHub", "Class Site"],
+    "linkIcons" : [0, 4],
+    "chips" : ["OS", "Unix", "C"],
+    "chipColors": [12,13,8],
+    "descriptionBolds" : ["exokernel", "unix-like"],
+    "contributionBolds" : ["user-level", "multitasking", "booting,"]
+  },
+  {
+    "id" : 5,
+    "title" : "SQL Project",
+    "image" : "sql",
+    "description" : "A group website project for my databases class with select, update, insert, & delete SQL queries",
+    "contributions" : ["Helped design SQL database", "Implemented simple interface for database", "Connected interface into SQL queries"],
+    "links" : ["https://github.com/akerr501/TheSpiceShop"],
+    "linkText": ["GitHub"],
+    "linkIcons" : [0, 4],
+    "chips" : ["Web", "SQL", "Node.js"],
+    "chipColors": [9,19,27],
+    "descriptionBolds" : ["databases", "sql"],
+    "contributionBolds" : ["design", "interface", "sql queries"]
+  }
+]

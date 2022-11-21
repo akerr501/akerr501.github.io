@@ -1,0 +1,54 @@
+.resume-section {
+  box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(0, 0, 0, 0.175);
+  border-radius: 0.375rem;
+  background-color: #FFFFFF;
+}
+
+.resume-section:hover {
+  transition: 0.1s;
+  box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.resume-details-title {
+  font-size: 20px;
+  text-align: left;
+  display: flex;
+}
+
+.resume-details-title-one {
+  font-weight: 500;
+}
+
+.resume-details-title-two {
+  font-style: italic;
+  opacity: 0.85;
+}
+
+.resume-details-subtitle {
+  text-align: left;
+  font-size: 18px;
+  opacity: 0.85;
+}
+
+.resume-details-description {
+  text-align: left;
+}
+
+.tooltip-arrow {
+    display: none !important;
+}
+
+.resume-download {
+  display: inline-block;
+}
+
+.resume-download-link,
+resume-download-link:hover,
+resume-download-link:focus,
+resume-download-link:active,
+resume-download-link:visited,
+resume-download-link:link {
+  color: inherit;
+  text-decoration: none;
+}
