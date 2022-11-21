@@ -15,7 +15,7 @@ function NavigationBar() {
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav>
-          <Nav.Link href="resume" className="px-3">
+          <Nav.Link href="#/resume" className="px-3">
             <motion.div whileHover={{color: colors.mainDarker}}>
               Resume
             </motion.div>

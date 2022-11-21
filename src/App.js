@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import {
-  BrowserRouter,
+  HashRouter,
   Routes,
   Route,
 } from "react-router-dom";
@@ -35,14 +35,14 @@ class App extends Component {
   render() {
     return (
       <div className="full-height">
-      <BrowserRouter>
+      <HashRouter>
         <Routes>
           <Route path="/" element={<Home />} />
           {/* <Route path="business" element={<Business />} /> */}
           <Route path="resume" element={<Resume />} />
           <Route path="*" element={<Error />} />
         </Routes>
-      </BrowserRouter></div>
+      </HashRouter></div>
     );
   }
 }
