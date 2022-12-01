@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-import Container from 'react-bootstrap/Container';
 import BoldText from "../BoldText";
 import { FaCodeBranch, FaLink, FaGithub, FaAppStoreIos, FaGooglePlay, FaUniversity, FaVideo } from "react-icons/fa";
 
