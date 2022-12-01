@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/static/css/main.31e00232.css",
+    "main.js": "/static/js/main.f4f34ef4.js",
+    "static/js/787.3ba5e41c.chunk.js": "/static/js/787.3ba5e41c.chunk.js",
+    "static/media/about2.jpg": "/static/media/about2.8054f87b34cb5145bc61.jpg",
+    "static/media/404.png": "/static/media/404.00d6cd8b332806c6713a.png",
+    "static/media/AK.png": "/static/media/AK.a97213ef84473f55ee18.png",
+    "static/media/jos.png": "/static/media/jos.473b5b1180d740ee9dbd.png",
+    "static/media/about1.jpg": "/static/media/about1.891da589059d49090620.jpg",
+    "static/media/personal.png": "/static/media/personal.6160b3efffffe0d8f067.png",
+    "static/media/opens.png": "/static/media/opens.49de44af52d2b56d358c.png",
+    "static/media/sql.png": "/static/media/sql.2dc23b9cad7fed1b9f0f.png",
+    "static/media/resume.pdf": "/static/media/resume.a6d5e2526bd5ce044bf3.pdf",
+    "static/media/capstone.png": "/static/media/capstone.ab0c8d108f7a42b05117.png",
+    "static/media/bblogo.png": "/static/media/bblogo.05c5ae1702327b0340eb.png",
+    "static/media/bbleaves.svg": "/static/media/bbleaves.9ac42ab76ddd3d564e9abc3239d2a75d.svg",
+    "index.html": "/index.html",
+    "main.31e00232.css.map": "/static/css/main.31e00232.css.map",
+    "main.f4f34ef4.js.map": "/static/js/main.f4f34ef4.js.map",
+    "787.3ba5e41c.chunk.js.map": "/static/js/787.3ba5e41c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.31e00232.css",
+    "static/js/main.f4f34ef4.js"
+  ]
+}
