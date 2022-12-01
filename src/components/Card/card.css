@@ -4,9 +4,10 @@
 
 .card-container {
   width: 150px;
-  height: 325px;
+  height: 335px;
   perspective: 500px;
   cursor: pointer;
+  -webkit-text-size-adjust: none;
   /* -webkit-font-smoothing: subpixel-antialiased; */
 }
 
@@ -35,7 +36,7 @@
 .back {
   position: absolute;
   width: 100%;
-  height: 325px;
+  height: 335px;
   background: white;
   text-align: center;
   border-radius: 5px;
@@ -74,6 +75,7 @@
 
 .contribution-list {
   padding-left: 24px;
+  margin-bottom: 10px;
   list-style-type: "- ";
 }
 

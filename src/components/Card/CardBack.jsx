@@ -14,7 +14,7 @@ const handleListClick = (link, e) => {
 
 function CardBack(props) {
   return (
-    <Container className="back" fluid style={{ paddingLeft: 0, paddingRight: 0 }}>
+    <div className="back">
       <div className="title-text mt-2"><h6 className="me-2">Contributions</h6><FaCodeBranch /></div>
       <ul className="contribution-list me-1 descriptionText">
         {props.contributions.map(( contrib ) =>
@@ -42,7 +42,7 @@ function CardBack(props) {
           </li>
         )}
       </ul>
-    </Container>
+    </div>
   );
 }
 

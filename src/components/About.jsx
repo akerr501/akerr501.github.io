@@ -13,8 +13,8 @@ function About() {
               <Col>
                 <BoldText
                   className="mb-3"
-                  text="Hello there, my name is Adam Kerr, I'm 21 years old and I recently graduated from Oregon State University in 2022. I'm experienced in mobile and web development, along with microcontrollers and databases."
-                  boldText={["oregon state", "2022.", "mobile", "web", "microcontrollers", "databases", "21"]}
+                  text="Hello, my name is Adam Kerr, I'm 21 years old and I recently graduated from Oregon State University in 2022. I'm experienced in mobile and web development, along with microcontrollers and databases."
+                  boldText={["oregon state", "mobile", "web", "microcontrollers", "databases", "21"]}
                 />
                 <BoldText
                   text="I'm passionate about working on complicated problems that require creative solutions. Ultimately, I want to work on projects that focus on sustainability or helping others!"
@@ -43,7 +43,7 @@ function About() {
             </div>
             <div className="section-child section-text">
               <BoldText
-                text="When I'm not programming, I like get outdoors! I like to play frisbee, go hiking, rock climb, and volunteer. At home, I relax by reading murder mystery novels and sipping on tea. My favorite activity with friends is getting together and playing board games"
+                text="When I'm not programming, I like to get outdoors! I like to play frisbee, hike, rock climb, and volunteer. At home, I relax by reading murder mystery novels and sipping on tea. My favorite activity with friends is getting together and playing board games"
                 boldText={["outdoors!", "rock climb,", "novels"]}
               />
             </div>
