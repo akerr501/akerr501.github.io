@@ -2,25 +2,26 @@ import React from "react";
 import Container from 'react-bootstrap/Container';
 import NavigationBar from "../components/NavigationBar"
 import Statement from "../components/Statement"
-import Portfolio from "../components/Portfolio"
+import KeyProjects from "../components/KeyProjects"
 import About from "../components/About"
 import Contact from "../components/Contact"
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import colors from "../resources/colors.json";
+import colors from "../resources/data/colors.json";
 
-const Home = () => {
+const Home = (props) => {
+
   return (
-    <div style={{backgroundColor: colors.background}}>
+    <div className={props.theme}>
       <ToastContainer closeButton={false} />
-      <NavigationBar />
+      <NavigationBar theme={props.theme} updateTheme={props.updateTheme} />
       <Container fluid="sm">
-        <Statement />
-        <Portfolio />
-        <About />
+        <Statement theme={props.theme} />
+        <KeyProjects theme={props.theme}/>
+        <About theme={props.theme} />
 
       </Container>
-      <Contact />
+      <Contact theme={props.theme}/>
     </div>
   );
 };

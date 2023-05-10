@@ -1,0 +1,275 @@
+
+.card-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  list-style: none;
+  padding-left: 0px;
+  margin: 0;
+}
+
+.card-hero {
+  position: relative;
+  padding: 25px;
+  height: 420px;
+  flex: 0 0 40%;
+  max-width: 40%;
+}
+
+.card-hero:nth-child(4n + 1),
+.card-hero:nth-child(4n + 4) {
+  flex: 0 0 60%;
+  max-width: 60%;
+}
+
+.card-hero:nth-child(odd) {
+  padding-left: 0;
+}
+
+.card-hero:nth-child(even) {
+  padding-right: 0;
+}
+
+.card-hero-content-container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: block;
+  cursor: pointer;
+  pointer-events: none;
+}
+
+.card-hero-content-container.open {
+  cursor: default;
+  top: 0;
+  left: 0;
+  right: 0;
+  position: fixed;
+  z-index: 1;
+  overflow: hidden;
+  padding: 40px 0;
+}
+
+.card-hero-content {
+  pointer-events: auto;
+  position: relative;
+  border-radius: 20px;
+  background: #1c1c1e;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  margin: 25px auto;
+
+  box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.resume-section:hover {
+  box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.open .card-hero-content {
+  height: auto;
+  max-width: 700px;
+  overflow: hidden;
+}
+
+.card-open-link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.card-hero-image {
+  width: 100%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  /* object-fit: fill; */
+  object-fit: cover;
+  pointer-events: none;
+}
+
+.card-image-container {
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+
+  height: 390px;
+  width: 101%;
+  transform: translateZ(0);
+}
+
+.title-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  max-width: 300px;
+}
+
+h2 {
+  color: #fff;
+  margin: 8px 0;
+}
+
+
+.overlay {
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 990px;
+}
+
+.overlay div {
+  display: block;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 100vw;
+  left: 50%;
+  background: rgba(0, 0, 0, 0.8);
+  will-change: opacity;
+  cursor: pointer;
+
+
+  transform: translateX(-50%);
+}
+
+.content-container-dark, .content-container-light {
+  padding: 420px 35px 35px 35px;
+  max-width: 700px;
+  width: 90vw;
+}
+
+.content-container-light {
+  color: black;
+  background-color: #fafcfc;
+  /* background-color: #FFFFFF; */
+}
+
+.content-container-dark {
+  /* background-color: #2C3639; */
+  background-color: #435055;
+  color: #FAF8F1;
+}
+
+
+@media only screen and (max-width: 1199px) {
+  .card-hero-image {
+    object-fit: cover;
+  }
+}
+
+
+@media only screen and (max-width: 800px) {
+  .card-hero {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+
+  .card-hero:nth-child(4n + 1),
+  .card-hero:nth-child(4n + 4) {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+
+  .content-container-dark, .content-container-light {
+    width: 100vw;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .card-hero {
+    flex: 1 0 100%;
+    max-width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .card-hero:nth-child(4n + 1),
+  .card-hero:nth-child(4n + 4) {
+    flex: 1 0 100%;
+    max-width: 100%;
+  }
+
+  .card-hero-content-container.open {
+    padding: 0;
+  }
+
+  .content-container-dark, .content-container-light {
+    width: 100vw;
+  }
+
+}
+
+.card-list.small-cards {
+  justify-content: space-around;
+}
+
+
+.small-cards .card-hero {
+  flex: 0 0 30%;
+  width: 30%;
+  min-width: 250px;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.small-cards .card-hero-image {
+  object-fit: cover;
+}
+
+
+/* Extended Content */
+
+.contribution-list {
+  padding-left: 24px;
+  margin-bottom: 10px;
+  list-style-type: "- ";
+}
+
+.icon-list {
+  padding-left: 15px;
+  list-style: none;
+}
+
+.c-list-item {
+  text-align: left;
+  font-weight: normal;
+  /* margin-bottom: 1px; */
+}
+
+.c-list-item::marker {
+  font-weight: bold;
+}
+
+.inline {
+  display: inline-flex;
+}
+
+.descriptionText {
+  text-align: left;
+  /* margin-left: 5px; */
+  /* padding-right: 0.25px; */
+  font-size: 18px;
+}
+
+.title-text {
+  width: 100%;
+  text-align: left;
+  padding-left: 5px;
+  display: inline-flex;
+  font-size: 20px;
+}
+
+.see-more {
+  color: #67b5b5;
+  cursor: pointer;
+}

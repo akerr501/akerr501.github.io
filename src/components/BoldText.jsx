@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import colors from "../resources/colors.json";
+import colors from "../resources/data/colors.json";
 
 function BoldText(props) {
   var indices = [];
@@ -32,9 +32,9 @@ function BoldText(props) {
           return (
               <motion.div
                 key={itemText}
-                className="list-chip-div"
-                whileHover={{ scaleY: 1.1, scaleX: 1.05, color: colors.main }}
-                whileTap={{ scaleY: 1.1, scaleX: 1.05,  color: colors.main}}
+                className={"hover-color inline"}
+                whileHover={{ scaleY: 1.1, scaleX: 1.05}}
+                whileTap={{ scaleY: 1.1, scaleX: 1.05}}
                 transition={{ type: "spring", bounce: 0.15}}
               >
                 <b>{itemText}</b>

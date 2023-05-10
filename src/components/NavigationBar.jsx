@@ -1,32 +1,75 @@
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
-import { motion } from "framer-motion";
-import colors from "../resources/colors.json";
+import { motion, AnimatePresence } from "framer-motion";
+import colors from "../resources/data/colors.json";
+import { useState } from "react";
 
-function NavigationBar() {
+import { HiOutlineSun } from "react-icons/hi";
+import { RiMoonClearLine } from "react-icons/ri";
+
+function NavigationBar(props) {
+
+  const [expanded, setExpanded] = useState(false)
+
+  const setToggle = async () => {
+    if(expanded) await new Promise(resolve => setTimeout(resolve, 100));
+    setExpanded(!expanded)
+  }
+
+  let icon;
+  if(props.theme === "light"){
+    icon = <HiOutlineSun className="mb-1 mx-1"/>;
+  } else {
+    icon = <RiMoonClearLine className="mb-1"/>;
+  }
+
   return (
-      <Navbar expand="sm" style={{backgroundColor: colors.background}} className="gap-4 px-5">
+      <Navbar onToggle={setToggle} expand="sm" className={props.theme + " gap-4 px-5"}>
       <Navbar.Brand href="/">
-        <motion.div whileTap={{color: colors.mainDarker}} whileHover={{color: colors.mainDarker}}>
+        <div className={"hover-color " + props.theme}>
           Adam Kerr
-        </motion.div>
+        </div>
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav>
           <Nav.Link href="/resume" className="px-3">
-            <motion.div whileHover={{color: colors.mainDarker}}>
+            <div className={(props.theme === "dark" ? "dark " : "") + "hover-color"}>
               Resume
-            </motion.div>
+            </div>
           </Nav.Link>
-          <NavDropdown title="Key Projects" id="basic-nav-dropdown" className="ms-2 px-2">
+          <Nav.Link href="/portfolio" className="px-3">
+            <div className={(props.theme === "dark" ? "dark " : "") + "hover-color"}>
+              Portfolio
+            </div>
+          </Nav.Link>
+          {/* <NavDropdown title="Key Projects" className={props.theme + " hover-color ms-2 px-2"}>
             <NavDropdown.Item href="https://www.bonobooks.app/">BonoBooks</NavDropdown.Item>
-            <NavDropdown.Divider />
             <NavDropdown.Item href="https://github.com/akerr501/akerr501.github.io">Personal Website</NavDropdown.Item>
-            <NavDropdown.Divider />
             <NavDropdown.Item href="https://github.com/OPEnSLab-OSU/Loom">Loom</NavDropdown.Item>
-          </NavDropdown>
+          </NavDropdown> */}
+        </Nav>
+        <Nav style={{ width: "100%" }}>
+            <div
+              className={"toggle-container " + (props.theme === "light" ? "light" : "dark") + (expanded ? " mt-3 ms-3" : "")}
+              onClick={() => props.updateTheme(props.theme === "light" ? "dark" : "light")}
+              style={{ 'marginLeft': (expanded ? "inherit" : "auto"), 'justifyContent': props.theme === "dark" ? 'flex-end' : 'flex-start' }}
+            >
+              <motion.div layout className="toggle-icon-container">
+                <AnimatePresence exitBeforeEnter initial={false}>
+                  <motion.i
+                    key={props.theme === "dark" ? 'moon' : 'sun'}
+                    initial={{ y: -30, opacity: 0 }}
+                    animate={{ y: 0, opacity: 1 }}
+                    exit={{ y: 30, opacity: 0 }}
+                    transition={{ duration: .2 }}
+                  >
+                    {icon}
+                  </motion.i>
+                </AnimatePresence>
+              </motion.div>
+            </div>
         </Nav>
       </Navbar.Collapse>
     </Navbar>

@@ -1,4 +1,5 @@
-import { motion } from "framer-motion"
+import { motion } from "framer-motion";
+import { useState } from 'react';
 import { IconContext } from "react-icons";
 import { FaRegCopy } from "react-icons/fa";
 import Col from 'react-bootstrap/Col';
@@ -9,6 +10,15 @@ import { toast } from 'react-toastify';
 const emojis = ['🚀', '✔️', '👋', '😎', '👀']
 
 function IconBuilder(props) {
+
+  const [isHover, setIsHover] = useState(false);
+
+  const handleMouseEnter = () => {
+     setIsHover(true);
+  };
+  const handleMouseLeave = () => {
+     setIsHover(false);
+  };
 
   const handleIconClick = () => {
     window.open(props.link);
@@ -31,13 +41,19 @@ function IconBuilder(props) {
 
 
   return (
-    <Col className="justify-content-center icon-column align-middle">
+    <Col className="justify-content-center icon-column align-middle mb-2">
       <IconContext.Provider value={{ style: {cursor: "pointer"}, size: "40px", className: "my-3" }}>
         <motion.div
-          transition={{ type: "spring", stiffness: "66"}}
-          whileHover={{ color: props.tapColor, scale: 1.125}}
-          whileTap={{ color: props.tapColor, scale: 0.9 , rotate: 360}}
-          onClick={(props.copyBoth ? handleCopyClick : handleIconClick) }
+          transition={{ type: "spring", stiffness: "45"}}
+          onClick={(props.copyBoth ? handleCopyClick : handleIconClick)}
+          whileHover={{ scale: 1.125, rotate: 360}}
+          whileTap={{ scale: 0.9 }}
+          onMouseEnter={handleMouseEnter}
+          onMouseLeave={handleMouseLeave}
+          style={{
+            color: isHover ? (props.theme==="light" ? props.tapColor : props.hoverColor) :  "inherit",
+            transitionDuration: "0.1s"
+          }}
         >
           {props.children}
         </motion.div>

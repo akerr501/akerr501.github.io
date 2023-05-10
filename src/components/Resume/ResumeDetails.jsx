@@ -2,7 +2,7 @@ import GridRow from "../GridRow";
 import BoldText from "../BoldText";
 
 
-function ResumeDetails(props) {
+function ResumeDetails(props) {  
   return (
     <GridRow>
       <div className="resume-details-title">
@@ -14,13 +14,13 @@ function ResumeDetails(props) {
       </div>
       {props.description !== undefined &&
         <div className="resume-details-description">
-          <BoldText text={props.description} boldText={props.descriptionBolds} />
+          <BoldText text={props.description} boldText={props.descriptionBolds} theme={props.theme} />
         </div>
       }
       <ul className="contribution-list">
         {props.accomplishments.map(( accomp ) =>
           <li key={accomp} className="c-list-item">
-            <BoldText text={accomp} boldText={props.accomplishmentBolds} />
+            <BoldText text={accomp} boldText={props.accomplishmentBolds} theme={props.theme}/>
           </li>
         )}
       </ul>

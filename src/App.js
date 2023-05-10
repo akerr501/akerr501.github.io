@@ -5,42 +5,47 @@ import {
   Routes,
   Route,
 } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 import Home from "./routes/Home";
 import Resume from "./routes/Resume";
-// import Business from "./routes/Business";
+import Portfolio from "./routes/Portfolio";
 import Error from "./routes/Error";
 
 class App extends Component {
-  state = {
-    data: null
+
+  state = { theme:
+    localStorage.getItem("theme") !== undefined && localStorage.getItem("theme") !== null
+      ? localStorage.getItem("theme") :
+        (window.matchMedia&& window.matchMedia('(prefers-color-scheme: dark)').matches)
+          ? "dark" : "light"
   };
 
+  updateTheme = (newTheme) => {
+    localStorage.setItem("theme", newTheme);
+    this.setState({ theme: newTheme });
+  };
 
   componentDidMount() {
-    this.callBackendAPI()
-      .then(res => this.setState({ data: res.express }))
-      .catch(err => console.log(err));
+    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', event => {
+      if(localStorage.getItem("theme") === undefined || localStorage.getItem("theme") === null) {
+        this.updateTheme(event.matches ? "dark" : "light");
+      }
+    });
   }
-    // fetching the GET route from the Express server which matches the GET route from server.js
-  callBackendAPI = async () => {
-    const response = await fetch('/express_backend');
-    const body = await response.json();
 
-    if (response.status !== 200) {
-      throw Error(body.message)
-    }
-    return body;
-  };
 
   render() {
+    console.log(this.state.theme);
+
     return (
       <div className="full-height">
       <BrowserRouter basename={process.env.PUBLIC_URL}>
         <Routes>
-          <Route path="/" element={<Home />} />
-          {/* <Route path="business" element={<Business />} /> */}
-          <Route path="resume" element={<Resume />} />
-          <Route path="*" element={<Error />} />
+          <Route path="/" element={<Home theme={this.state.theme} updateTheme={this.updateTheme} />} />
+          <Route path="portfolio" element={<Portfolio theme={this.state.theme} updateTheme={this.updateTheme}/>} />
+          <Route path="portfolio/:id" element={<Portfolio theme={this.state.theme} updateTheme={this.updateTheme}/>} />
+          <Route path="resume" element={<Resume theme={this.state.theme} updateTheme={this.updateTheme} />} />
+          <Route path="*" element={<Error theme={this.state.theme} updateTheme={this.updateTheme} />} />
         </Routes>
       </BrowserRouter></div>
     );

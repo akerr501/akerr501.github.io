@@ -31,8 +31,23 @@
     "descriptionBolds" : ["calibrate", "robotic arm", "model"],
     "contributionBolds" : ["opencv", "gui", "calibration"]
   },
+
   {
     "id" : 2,
+    "title" : "Loom",
+    "image" : "opens",
+    "description" : "Open-sourced Arduino library with a modular design to reduce the coding literacy for sensing projects.",
+    "contributions" : ["Developed LTE connectivity", "Designed continuous integration for testing", "Optimized installation"],
+    "links" : ["https://github.com/OPEnSLab-OSU/Loom", "https://open-sensing.org/"],
+    "linkText": ["GitHub", "Lab Site"],
+    "linkIcons" : [0, 4],
+    "chips" : ["IoT", "Arduino", "C++"],
+    "chipColors": [6,7,8],
+    "descriptionBolds" : ["modular", "coding literacy"],
+    "contributionBolds" : ["lte", "continuous integration", "optimized"]
+  },
+  {
+    "id" : 3,
     "title" : "Personal Site",
     "image" : "personal",
     "description" : "My personal site to show others my skills and experiences. Built in React.js and hosted via GitHub.",
@@ -48,21 +63,6 @@
     "descriptionBolds" : ["react.js", "personal"],
     "contributionBolds" : ["animations", "designed", "myself"]
   },
-  {
-    "id" : 3,
-    "title" : "Loom",
-    "image" : "opens",
-    "description" : "Open-sourced Arduino library with a modular design to reduce the coding literacy for sensing projects.",
-    "contributions" : ["Developed LTE connectivity", "Designed continuous integration for testing", "Optimized installation"],
-    "links" : ["https://github.com/OPEnSLab-OSU/Loom", "https://open-sensing.org/"],
-    "linkText": ["GitHub", "Lab Site"],
-    "linkIcons" : [0, 4],
-    "chips" : ["IoT", "Arduino", "C++"],
-    "chipColors": [6,7,8],
-    "descriptionBolds" : ["modular", "coding literacy"],
-    "contributionBolds" : ["lte", "continuous integration", "optimized"]
-  },
-
   {
     "id" : 4,
     "title" : "JOS",

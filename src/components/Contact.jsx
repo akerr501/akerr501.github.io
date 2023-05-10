@@ -3,13 +3,13 @@ import Row from 'react-bootstrap/Row';
 import Container from 'react-bootstrap/Container';
 import IconBuilder from './Icon/IconBuilder';
 import { FaGithub, FaInstagram, FaLinkedinIn, FaRegEnvelope } from "react-icons/fa";
-import colors from "../resources/colors.json";
+import colors from "../resources/data/colors.json";
 
-function Contact() {
+function Contact(props) {
   return (
-    <Container fluid className="pt-4">
-      <GridRow color={colors.blueBackground}>
-        <h3 className="mt-4">Contact</h3>
+    <Container fluid className="pt-4" style={{  overflow: "hidden"}}>
+      <GridRow color={props.theme === "light" ? colors.blueBackground : colors.main}>
+        <h3 className="my-4">Contact</h3>
         <Container style={{width: "66%"}} className="mb-5 justify-content-center" fluid="sm">
           <Row>
             <IconBuilder
@@ -17,6 +17,7 @@ function Contact() {
               link="kerrada@oregonstate.edu"
               hoverColor="#B6E6BD"
               tapColor="#6acb78"
+              theme={props.theme}
               copyBoth={true}
             >
               <FaRegEnvelope />
@@ -26,6 +27,7 @@ function Contact() {
               link="https://github.com/akerr501"
               hoverColor="#eed2c1"
               tapColor="#e4b79c"
+              theme={props.theme}
               copyBoth={false}
             >
               <FaGithub />
@@ -35,6 +37,7 @@ function Contact() {
               link="https://www.linkedin.com/in/adam-c-kerr"
               hoverColor="#b2d4e7"
               tapColor="#66aad0"
+              theme={props.theme}
               copyBoth={false}
             >
               <FaLinkedinIn />
@@ -44,6 +47,7 @@ function Contact() {
               link="https://www.instagram.com/aaaaadamkerr"
               hoverColor="#f6c0d2"
               tapColor="#ed82a6"
+              theme={props.theme}
               copyBoth={false}
             >
               <FaInstagram />

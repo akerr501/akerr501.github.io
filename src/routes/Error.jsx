@@ -5,19 +5,20 @@ import GridRow from "../components/GridRow";
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import BoldText from "../components/BoldText";
-import colors from "../resources/colors.json";
+import colors from "../resources/data/colors.json";
 
-const Error = () => {
+const Error = (props) => {
   return (
-    <div className="full-height" style={{backgroundColor: colors.background}}>
+    <div className={"full-height " + props.theme}>
       <ToastContainer closeButton={false} />
-      <NavigationBar />
+      <NavigationBar theme={props.theme} updateTheme={props.updateTheme} />
       <Container fluid="sm">
-        <GridRow>
-          <img className="error-image shadow-image mt-5" alt="" src={require('../resources/404.png')} />
-          <h2 className="my-3">
+        <GridRow >
+          <img className="error-image shadow-image mt-5" alt="" src={require('../resources/images/404.png')} />
+          <h2 className={"my-3 " + props.theme}>
             <BoldText text="It appears you got a little lost."
-            boldText={["lost."]} />
+            boldText={["lost."]}
+            theme={props.theme} />
             Let's get back on the path now
           </h2>
         </GridRow>

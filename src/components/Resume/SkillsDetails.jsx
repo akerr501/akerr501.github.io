@@ -1,6 +1,6 @@
 import Chip from '@mui/material/Chip';
 import { motion } from "framer-motion";
-import colors from '../../resources/colors.json';
+import colors from '../../resources/data/colors.json';
 import { FiInfo } from "react-icons/fi";
 import { IconContext } from "react-icons";
 import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
@@ -12,7 +12,7 @@ function SkillsDetails(props) {
   const ref = useRef(null);
 
   return (
-      <div className="skills-section mb-1">
+      <div className="mb-1">
         {props.title !== undefined &&
           <div className="resume-details-title mb-2" ref={ref}>
             {props.title}
@@ -30,7 +30,7 @@ function SkillsDetails(props) {
           </div>
         }
         {props.skills.map(( item ) =>
-          <motion.div key={item.value} className="list-chip-div m-1" whileHover={{ scaleY: 1.175, scaleX: 1.125}} transition={{ type: "spring", bounce: 0.66}}>
+          <motion.div key={item.value} className="inline m-1" whileHover={{ scaleY: 1.175, scaleX: 1.125}} transition={{ type: "spring", bounce: 0.66}}>
             <Chip
               label={item.value}
               variant="outlined"

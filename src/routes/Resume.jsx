@@ -5,22 +5,22 @@ import ResumeLayout from "../components/ResumeLayout";
 import { ToastContainer } from 'react-toastify';
 import Contact from "../components/Contact";
 import { Helmet } from 'react-helmet';
-import colors from "../resources/colors.json";
+import colors from "../resources/data/colors.json";
 
 
-const Resume = () => {
+const Resume = (props) => {
   return (
-    <div style={{backgroundColor: colors.background}}>
+    <div className={props.theme}>
     <Helmet>
       <title>Resume</title>
     </Helmet>
       <ToastContainer closeButton={false} />
-      <NavigationBar />
+      <NavigationBar theme={props.theme} updateTheme={props.updateTheme} />
       <Container fluid="sm" className="mb-4">
-        <ResumeLayout />
+        <ResumeLayout theme={props.theme}/>
 
       </Container>
-      <Contact />
+      <Contact theme={props.theme}/>
     </div>
   );
 };
