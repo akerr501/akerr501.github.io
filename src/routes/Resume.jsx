@@ -5,7 +5,6 @@ import ResumeLayout from "../components/ResumeLayout";
 import { ToastContainer } from 'react-toastify';
 import Contact from "../components/Contact";
 import { Helmet } from 'react-helmet';
-import colors from "../resources/data/colors.json";
 
 
 const Resume = (props) => {

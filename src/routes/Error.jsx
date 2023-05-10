@@ -5,7 +5,6 @@ import GridRow from "../components/GridRow";
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import BoldText from "../components/BoldText";
-import colors from "../resources/data/colors.json";
 
 const Error = (props) => {
   return (

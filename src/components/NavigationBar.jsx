@@ -1,8 +1,6 @@
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
 import { motion, AnimatePresence } from "framer-motion";
-import colors from "../resources/data/colors.json";
 import { useState } from "react";
 
 import { HiOutlineSun } from "react-icons/hi";

@@ -5,7 +5,6 @@ import {
   Routes,
   Route,
 } from "react-router-dom";
-import { useParams, useNavigate } from "react-router-dom";
 import Home from "./routes/Home";
 import Resume from "./routes/Resume";
 import Portfolio from "./routes/Portfolio";

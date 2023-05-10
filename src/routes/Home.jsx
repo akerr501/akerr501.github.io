@@ -7,7 +7,6 @@ import About from "../components/About"
 import Contact from "../components/Contact"
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import colors from "../resources/data/colors.json";
 
 const Home = (props) => {
 

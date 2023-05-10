@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-import colors from "../resources/data/colors.json";
 
 function BoldText(props) {
   var indices = [];
