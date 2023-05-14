@@ -12,7 +12,7 @@ import { useWheelScroll } from "./utils/use-wheel-scroll";
 
 // Distance in pixels a user has to scroll a card down before we recognise
 // a swipe-to dismiss action.
-const dismissDistance = 90;
+const dismissDistance = 150;
 
 export const Card = memo(
   ({
@@ -112,6 +112,7 @@ export const Card = memo(
               isSelected={isSelected}
               chips={chips}
               chipColors={chipColors}
+              onClick={toggleSelect}
             />
             <ExtendedContent
               theme={theme}

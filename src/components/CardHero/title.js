@@ -2,6 +2,8 @@ import * as React from "react";
 import { motion, useDeprecatedInvertedScale } from "framer-motion";
 import { closeSpring, openSpring } from "./utils/animations";
 import colors from '../../resources/data/colors.json';
+
+import { HiX } from "react-icons/hi";
 import Chip from '@mui/material/Chip';
 
 
@@ -19,7 +21,20 @@ export const Title = (props) => {
       transformTemplate={scaleTranslate}
       style={{ ...inverted, originX: 0, originY: 0 }}
     >
-      <h2>{props.title}</h2>
+      <h2 className="card-hero-title">
+        {props.title}
+        {props.isSelected &&
+          <motion.div
+            whileHover={{scale: 1.2}}
+            whileTap={{scale: 0.8}}
+            className="pe-1"
+            onClick={props.onClick}
+          >
+            <HiX className="close-mark" style={{cursor: "pointer"}}/>
+          </motion.div>
+        }
+      </h2>
+
       {props.chips.map(( chip, index ) =>
         <motion.div key={chip} className="inline me-2" whileHover={{ scale: 1.15}} whileTap={{ scale: 1.15 }} transition={{ type: "spring", bounce: 0.66}}>
           <Chip
