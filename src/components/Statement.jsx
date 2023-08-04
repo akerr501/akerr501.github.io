@@ -18,7 +18,7 @@ function Statement(props) {
           </div>
           <div className="section-child section-text" style={{fontSize: "1.5em"}}>
             <BoldText
-              text="I am a young and ambitious programmer with unique solutions to complex problems"
+              text="I am a young and ambitious programmer working at the Pacific Northwest National Laboratory, helping build complex solutions for unique problems"
               boldText={["ambitious", "solutions"]}
               theme={props.theme}
             />

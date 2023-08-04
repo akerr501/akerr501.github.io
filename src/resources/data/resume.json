@@ -16,11 +16,26 @@
   ],
   "workExperience": [
     {
+      "employer": "Pacific Northwest National Laboratory",
+      "position": "Software Engineer",
+      "location": "Remote, USA",
+      "start": "June 2023",
+      "end": "Present",
+      "description": "Developing various projects to help PNNL's goal for sustainability and energy. Responsibilities include:",
+      "accomplishments": [
+        "Creating low and mid-fidelity mockups for websites utilizing Figma.",
+        "Revamping old SQL databases into a modern backend using Azure services.",
+        "Parsing federal regulations and guidelines to help define project scope."
+      ],
+      "descriptionBolds" : ["sustainability", "energy"],
+      "accomplishmentBolds" : ["mockups", "figma", "sql", "regulations", "project scope", "azure"]
+    },
+    {
       "employer": "BonoBooks",
       "position": "Co-founder and Developer",
       "location": "Seattle, WA",
       "start": "March 2020",
-      "end": "Present",
+      "end": "June 2023",
       "description": "Co-developer of the only peer-to-peer textbook renting app on the market, developed with Flutter. Accomplishments include:",
       "accomplishments": [
         "Implemented touchless and secure payments with our payment processor Stripe.",
@@ -173,6 +188,14 @@
       "color": 25
     },
     {
+      "value": "Azure",
+      "color": 30
+    },
+    {
+      "value": "Figma",
+      "color": 31
+    },
+    {
       "value": "React.js",
       "color": 10
     },
@@ -194,9 +217,7 @@
     },
     {
       "value": "GitHub Actions",
-      "color": 30
+      "color": 32
     }
-
-
   ]
 }

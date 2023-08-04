@@ -13,7 +13,7 @@ function About(props) {
               <Col>
                 <BoldText
                   className="mb-3"
-                  text="Hello, my name is Adam Kerr, I'm 22 years old and I recently graduated from Oregon State University in 2022. I'm experienced in mobile and web development, along with microcontrollers and databases."
+                  text="Hello, my name is Adam Kerr, I'm 22 years old and I graduated from Oregon State University in 2022. I'm experienced in mobile and web development, along with microcontrollers and databases."
                   boldText={["oregon state", "mobile", "web", "microcontrollers", "databases", "22"]}
                   theme={props.theme}
                 />

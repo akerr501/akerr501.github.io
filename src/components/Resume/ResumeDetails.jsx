@@ -2,10 +2,10 @@ import GridRow from "../GridRow";
 import BoldText from "../BoldText";
 
 
-function ResumeDetails(props) {  
+function ResumeDetails(props) {
   return (
     <GridRow>
-      <div className="resume-details-title">
+      <div className="resume-details-title pt-1">
         <div className="resume-details-title-one pe-4">{props.titleOne}</div>
         <div className="resume-details-title-two">{props.titleTwo}</div>
       </div>
