@@ -1,0 +1,15 @@
+{
+  "short_name": "adamkerr",
+  "name": "Adam Kerr's personal website",
+  "icons": [
+    {
+      "src": "AK.png",
+      "type": "image/png",
+      "sizes": "50x50"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
